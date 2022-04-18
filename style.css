@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Beau Rivage', cursive;
+}
+h1, h2{
+    text-align: center;
+    font-weight: 700;
+    
+}
+
+h1{
+    font-size: 40px;
+}
+h1{
+    font-size: 30px;
+}
+
+.firstH{
+    margin-top: 20px;
+}
+
+figure{
+    padding: 0 5%;
+}
+
+.name{
+    text-align: left;
+}
+
+.intro{
+    text-align: left;
+    line-height: 2;
+    padding: 10px 5%;
+    font-size: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding: 10px 5%;
+}
+
+.radio1, .radio2{
+    margin-top: 20px;
+}
+
+.radio1 label, .radio2 label {
+    margin-right: 10px;
+}
+
+button{
+    padding: .4em 1em;
+    background-color: #2E76CF;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+}
+
+button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+button:hover{
+    padding: .5em 1.2em;
+    background-color: #42a5f5;
+}
+
+.submit {
+    padding: 10px 5%;
+}
+
+span{
+    color: darkslategray;
+    text-decoration: line-through;
+}
+
+#result{
+    border: 1px solid blanchedalmond;
+    padding: 10px 5%;
+}
+
+.resultsec{
+    padding: 5px 5%;
+}
+
+footer p{
+    font-size: 9px;
+    padding: 10px 5%;
+}
+
+#statement{
+    margin: 10px 5%;
+}
+
+@media screen and (max-width: 750px){
+    .container{
+        grid-template-areas: 
+        "a a"
+        "b b";
+    }
+    h1, h2{
+        margin: 10px 0;
+    }
+    .spouseName{
+        grid-area: b;
+    }
+    .yourName{
+        grid-area: auto;
+    }
+    .name2, .name{
+        display: block;
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap" rel="stylesheet">
+    <title>Love Calculator</title>
+</head>
+<body>
+    <h1 class="firstH">
+        Love Calculator
+    </h1>
+    <h2>
+        Calculate your love percentage
+    </h2>
+    <p class="intro">
+        Love is what makes our lives tick, and as much as it is difficult to know the right person. This <span>love calculator</span> might defy fate or force you to make your best decision ever.
+    </p>
+    <figure>
+        <img src="./image.jpg" alt="love image" width="300px" height="300px">
+        <figcaption>
+            Love is magical :<i>Unsplash.com</i>
+        </figcaption>
+    </figure>
+    <div class="container">
+        <div class="yourName">
+            <form>
+                <label class="name">Your Name</label>
+                <input type="text" id="male" onfocus="this.value = ''" > <br>
+                <div class="radio1">
+                    <input name="gender" type="radio">
+                    <label for="male">Male</label>
+                    <input name="gender" type="radio">
+                    <label for="female">Female</label> <br> 
+                </div>
+        </div>
+        <div class="spouseName">
+                <label class="name2">Your Spouse Name</label>
+                <input id="female" type="text" onfocus="this.value = ''"> <br>
+                <div class="radio2">
+                    <input name="gender2" type="radio" name="" id="male">
+                    <label for="male">Male</label>
+                    <input name="gender2" type="radio" name="" id="female">
+                    <label for="female">Female</label> <br> 
+                </div>
+        </div>
+            </form>
+        </div>
+        <div class="submit">
+            <button type="submit"><a href="#" onclick="loveCalc()">Submit</a></button>
+         </div>
+
+         <div class="resultsec">
+             <p id="result">
+                 Your relationship result here
+             </p>
+             <p id="statement">
+
+             </p>
+         </div>
+
+    <footer>
+        <p>
+            Created by Tozee 2022
+        </p>
+    </footer>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
